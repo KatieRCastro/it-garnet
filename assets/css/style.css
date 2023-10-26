@@ -1,0 +1,24 @@
+/* ------------------   course homepage stylesheet  ------------------*/
+
+
+
+/*--- type selector ---*/
+body{
+    background-color: lightpink;
+}
+
+#main-heading{
+    color: bisque;
+}
+.primary{
+    border: 2px solid bisque;
+    padding: 10px;
+}
+/*--- psuedo selector  --*/
+
+a:link{
+    color: hotpink;
+}
+a:link, a:visited{
+    color: hotpink;
+}
