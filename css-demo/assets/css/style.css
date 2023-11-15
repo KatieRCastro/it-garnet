@@ -34,39 +34,29 @@ html {
   /* ---------------Global Styles----------------- */
   
   body {
-    font-family: "Rubik", sans-serif;
-    background-color:#101240;
+    font-family: 'Gabriela', serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Share Tech', sans-serif;
+font-family: 'Share Tech Mono', monospace;
+background-color: #104d73;
   }
   
   main{
-    background-color:#ffffff;
+    background-color:#eee9db;
     width:80vw;
-    /* Long form */
-    margin-top:40px;
-    margin-right:auto;
-    margin-bottom:40px;
-    margin-left:auto;
-    /* 4 Value Shorthand T,R,B,L*/
     margin:40px auto 40px auto;
-    /* 2 Value Shorthand T/B, L/R*/
-    margin:40px auto;
-    border:2px solid #0ABFBF;
+    border:2px solid #104d73;
     border-radius:4px;
   }
   
   header.primary{
-    background-color:#8fbdd9;
-    background-image: url("https://assets.codepen.io/7248/bg_1.png");
-    /* Local Path
-      background-image: url("../img/bg_1.png")
-    */  
-    background-size:cover;
-    background-repeat:no-repeat;
-    padding:20px; 
+    background-color:#eee9db;
+    background-color: #ddc173;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='1' viewBox='0 0 40 1' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v1H0z' fill='%23eee9db' fill-opacity='0.68' fill-rule='evenodd'/%3E%3C/svg%3E");    padding:20px; 
     display:flex;
     flex-direction:row;
     justify-content:flex-start;
-    border-bottom:3px solid #104d73;
+    border-bottom:3px solid #a10028;
   }
   
   header.primary .hgroup{
@@ -78,14 +68,14 @@ html {
   }
   
   header.primary .hgroup h1 a{
-    color:white;
+    color: #a10028;
     text-decoration:none;
     text-shadow:1px 1px #000000;
     font-size:2.6rem;
   }
   
   header.primary .hgroup h2{
-    color:#ffffff;
+    color:#a10028;
     text-shadow:1px 1px #000000;
     font-size:1.8em;
     line-height:1.1
@@ -106,41 +96,39 @@ html {
   }
   
   header.primary nav a{
-    color:#fff;
+    color:#a10028;
     text-decoration:none;
-    background-color:rgba(0,0,0,.6);
+    background-color:rgba(47,89,130,.6);
     display:block;
     padding: 10px;
     border-radius: 20px 0;
-    border:1px solid #cc3a67;
-    border-right:10px solid #cc3a67;
+    border:1px solid #a10028;
+    border-right:10px solid #a10028;
     text-align:right;
   }
   
   #content h2, #content h3, .widget h2{
-    color:#161a59;
-    border-left:7.5px solid #d94179;
-    border-radius:15px 0;
+    color:#a10028;
+    border-left:7.5px solid #a10028;
     padding:7.5px;
   }
   
   #blog {
-   background: rgb(34,193,195);
-  background: linear-gradient(4deg, rgba(34,193,195,1) 0%, rgba(16,77,115,1) 100%);
+    background-color: #ddc173;
     padding:20px 0;
-    border-top:6px double #0a96a6;
-    border-bottom:6px double #0a96a6;
+    border-top:6px double #a10028;
+    border-bottom:6px double #a10028;
   }
   
   #blog > h2{
-    color:#ffffff;
-    text-shadow:2px 2px #000000;
+    color:#a10028;
+    text-shadow:1px 1px #000000;
     font-size:2.2rem;
     margin-left:20px;
   }
   
   article.post{
-    background-color:#ffffff;
+    background-color:#eee9db;
     margin:20px;
     padding:20px;
     display:grid;
@@ -173,14 +161,13 @@ html {
   }
   
   aside .widget:first-of-type{
-    border-right:1px dotted #c0c0c0;
+    border-right:1px solid #a10028;
     padding-right:20px;
   }
   
   #colophon{
     text-align:center;
-      background-color:#8fbdd9;
-    background-image: url("https://assets.codepen.io/7248/bg_1.png");
+      background-color:#a10028;
     padding:20px;
     color:#ffffff;
   }
