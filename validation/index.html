@@ -5,29 +5,57 @@
         <title>It Garnet | Katie Castro</title>
         <meta name="description" content="form practice">
         <meta name="author" content="Katie Castro">
-        <link href="assets/css/style.css">
+        <link href="assets/css/style.css" rel="stylesheet">
       </head>
       <body>
       <main>
-      <form>
-        <h1 id="main-heading">New Patient Registration</h1>
+        <header role="banner" class="primary container">
+        <div class="hgroup">
+        <h1>New Patient Registration</h1>
         <h4>Please fill out the form below</h4>
-        <label for="fname">First Name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="minitial">Middle Initial:</label><br>
-        <input type="text" id="minitial" name="minitial"><br>
-        <label for="lname">Last Name:</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="email">Email:</label><br>
-        <input type="text" id="email" name="email"><br>
+        </div>
 
-        <p>Sex:</p>
-        <input type="radio" id="male" name="sex" value="Male">
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="sex" value="Female">
-        <label for="female">Female</label><br>
-        <input type="radio" id="n/a" name="sex" value="N/A">
-        <label for="n/a">N/A</label><br>
+        <form id="RegistrationForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php" method="post">
+        <div class="input-container">
+        <label for="Name" class="formlabel">First Name:</label>
+        <input type="text" id="Name" name="Name" size="38" maxlength="10"
+        data-rule-required="true"
+        data-msg-required="Name is required">
+        <label for="Name" class="error"></label><br>
+        </div>
+
+        <div class="input-container">
+        <label for="MiddleInitial" class="formlabel">Middle Initial:</label>
+        <input type="text" id="MiddleInitial" name="MiddleInitial" size="1" maxlenght="1">
+       </div>
+
+       <div class="input-container">
+        <label for="LastName" class="formlabel">Last Name:</label>
+        <input type="text" id="LastName" name="LastName" size="30" maxlength="30"
+        data-rule-required="true"
+        data-msg-required="Last Name is Required">
+        <label for="LastName" class="error"></label><br>
+       </div>
+
+       <div class="input-container">
+        <label for="Email" class="formlabel">Email:</label>
+        <input type="text" id="Email" name="Email" size="30" maxlength="30"
+        data-rule-required="true"
+        data-msg-required="Invalid Email"
+        data-rule-required="true"
+        data-msg-required="Email is required">
+        <label for="Email" class="error"></label><br>
+        </div>
+        <div class="input-container">
+        <label class="formlabel">Sex:</label>
+        <label for="Male"> <input type="radio" name="sex" id="M" value="M"
+          data-rule-required="true"
+          data-msg-required="Please select an option">Male
+        </label>
+        <label for="Female"><input type="radio" name="Sex" id="F" value="F">Female</label>
+       <label for="N/A"><input type="radio" name="Sex" id="n/a" value="N/A"></label>
+       <label for="Sex" class="Error"></label><br>
+        </div>
 
         <label for="birthday">Birthday:</label><br>
         <input type="text" id="birthday" name="birthday"><br>
