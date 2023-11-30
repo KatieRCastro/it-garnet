@@ -196,11 +196,14 @@
   <option value="WV">West Virginia</option>
   <option value="WI">Wisconsin</option>
   <option value="WY">Wyoming</option>
-  </select>
+  </select>&nbsp; &nbsp;
+  <input type="text" id="Zip" placeholder="" size="5" maxlength="5"
+  data-rule-required="true"
+  data-rule-digits="true"
+  data-msg-required="Zip code must be 5 digits"
+  data-msg-digits="Zip code must be 5 digits">
+  <label for="Zip" class="error"></label>
   </div>
-
-<label></label>
-<input type="text" id="zip" name="zip"><br>
 
 <div class="field-divider"></div>
 <div class="input-container divider">
@@ -224,56 +227,11 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
 <script>
-  $( "#validation" ).validate({
+  $( "#RegistrationForm" ).validate({
   
   });                    
   </script>
         </header>
       </main>
       </body>
-</html>
-
-
-
-
-
-        
-
-        
-
-
-      </form>
-
-
-
-
-
-
-
-
-
-      </main>
-
-
-
-
-
-
-
-
-      </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
