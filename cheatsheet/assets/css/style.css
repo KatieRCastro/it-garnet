@@ -1,4 +1,11 @@
-/* ---------------Box Sizing----------------- */
+
+/* Color Theme Swatches in Hex 
+#04050D black
+#252526	dark grey 
+#585859 grey
+#F2F2F2 off white	
+#A6A6A6 light grey
+*//* ---------------Box Sizing----------------- */
 
 html {
     box-sizing: border-box;
@@ -11,7 +18,8 @@ html {
   
   body{
     font-family: 'Lato', sans-serif;
-    background:#c0c0c0;
+    background:#252526;
+    color: #fff;
     padding:20px;
   }
   
@@ -21,11 +29,12 @@ html {
   
   header h1{
     text-align:center;
+    color: #fff;
   }
   
   section[id]{
-    border:6px solid rgba(0,0,0,.4);
-    background:#fff;
+    border:6px solid #F2F2F2;
+    background:#252526;
     border-radius:12px;
     margin:40px auto;
     padding:20px;
@@ -73,9 +82,9 @@ html {
   
   code[class*="language-"],
   pre[class*="language-"] {
-      color: black;
+      color: #F2F2F2;
       background: none;
-      text-shadow: 0 1px white;
+      text-shadow: 0 white;
       font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
       font-size: 1em;
       text-align: left;
@@ -98,13 +107,13 @@ html {
   pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
   code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
       text-shadow: none;
-      background: #b3d4fc;
+      background: #252526	;
   }
   
   pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
   code[class*="language-"]::selection, code[class*="language-"] ::selection {
       text-shadow: none;
-      background: #b3d4fc;
+      background: #252526	;
   }
   
   @media print {
@@ -123,7 +132,7 @@ html {
   
   :not(pre) > code[class*="language-"],
   pre[class*="language-"] {
-      background: #f5f2f0;
+      background: #252526	;
   }
   
   /* Inline code */
