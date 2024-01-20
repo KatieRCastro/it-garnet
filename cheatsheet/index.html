@@ -1,63 +1,113 @@
-<!DOCTYPE html> <!--tells browser what html langues the doc is using-->
-<html lang="en,de"> <!--attributes: atrribute structure="" -->
-  <head><!--head section contains meta data and linked resources-->
-    <title> My First HTML Document</title>
-    <meta charset="utf-8" />  <!--self closing-->
-    <meta name="description" content="this is the elevator pitch for your site" />
-    <meta name="author" content="Katie Castro"/>
-    <meta name="keywords" content="Ualr, UA Little Rock, It Minor"/>
+<!DOCTYPE html>
+<!--tells browser what html langues the doc is using-->
+<html lang="en">
+  <!--attributes: atrribute structure="" -->
+  <head>
+    <!--head section contains meta data and linked resources-->
+    <title>My First HTML Document</title>
+    <meta charset="utf-8" />
+    <!--self closing-->
+    <meta
+      name="description"
+      content="this is the elevator pitch for your site"
+    />
+    <meta name="author" content="Katie Castro" />
+    <meta name="keywords" content="Ualr, UA Little Rock, It Minor" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
-<link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
   </head>
-  <body class="test"> 
-   <!--displayed content-->
-   <header>
-    <h1>HTML5 Reference Document</h1>
-  </header>
+  <body class="test">
+    <!--displayed content-->
+    <header>
+      <h1>HTML5 Reference Document</h1>
+    </header>
     <section id="forms">
-    <h2 class="setion-heading">Forms</h2>
-    <div class="output">
-      <form action="processing-script.php" method="get">
-        <fieldset>
-          <legend>Sample Form Fields</legend>
-          <label for="first-name">First Name</label>
-          <input type="input" id="first-name" name="first-name" required>
-          <label for="comments">Comments</label>
-          <textarea id="comments" name="comments"></textarea>
-          <label for="fav-car">Favorite Car Maker</label>
-          <select id="fav-car" name="fav-car">
-            <option value="F">Ford</option>
-            <option value="C">Chevy</option>
-            <option value="D">Dodge</option>
-            <option value="null" selected>---</option>
-          </select>
-          <input type="submit" value="Send">
+      <h2 class="section-heading">Forms</h2>
+      <div class="output">
+        <form action="processing-script.php" method="get">
           <fieldset>
-            <legend>Select a maintenance drone:</legend>
-  
-            <div>
-              <input type="radio" id="huey" name="drone" value="huey" checked>
-              <label for="huey">Huey</label>
-            </div>
-  
-            <div>
-              <input type="radio" id="dewey" name="drone" value="dewey">
-              <label for="dewey">Dewey</label>
-            </div>
-  
-            <div>
-              <input type="radio" id="louie" name="drone" value="louie">
-              <label for="louie">Louie</label>
-            </div>
-          </fieldset>
-        </fieldset>
-      </form>
-      </script>
-    </code>
-  </pre>
-    </div>
-    </section>
+            <legend>Sample Form Fields</legend>
+            <label for="first-name">First Name</label>
+            <input type="input" id="first-name" name="first-name" required />
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments"></textarea>
+            <label for="fav-car">Favorite Car Maker</label>
+            <select id="fav-car" name="fav-car">
+              <option value="F">Ford</option>
+              <option value="C">Chevy</option>
+              <option value="D">Dodge</option>
+              <option value="null" selected>---</option>
+            </select>
+            <input type="submit" value="Send" />
+            <fieldset>
+              <legend>Select a maintenance drone:</legend>
 
+              <div>
+                <input
+                  type="radio"
+                  id="huey"
+                  name="drone"
+                  value="huey"
+                  checked
+                />
+                <label for="huey">Huey</label>
+              </div>
+
+              <div>
+                <input type="radio" id="dewey" name="drone" value="dewey" />
+                <label for="dewey">Dewey</label>
+              </div>
+
+              <div>
+                <input type="radio" id="louie" name="drone" value="louie" />
+                <label for="louie">Louie</label>
+              </div>
+            </fieldset>
+          </fieldset>
+        </form>
+      </div>
+      <div class="markup">
+        <pre>
+    <code class="language-markup">
+       <script type="text/plain" class="language-markup">
+        <form action="processing-script.php" method="get">
+      <fieldset>
+        <legend>Sample Form Fields</legend>
+        <label for="first-name">First Name</label>
+        <input type="input" id="first-name" name="first-name" required>
+        <label for="comments">Comments</label>
+        <textarea id="comments" name="comments"></textarea>
+        <label for="fav-car">Favorite Car Maker</label>
+        <select id="fav-car" name="fav-car">
+          <option value="F">Ford</option>
+          <option value="C">Chevy</option>
+          <option value="D">Dodge</option>
+          <option value="null" selected>---</option>
+        </select>
+        <input type="submit" value="Send">
+        <fieldset>
+          <legend>Select a maintenance drone:</legend>
+          <div>
+            <input type="radio" id="huey" name="drone" value="huey" checked>
+            <label for="huey">Huey</label>
+          </div>
+          <div>
+            <input type="radio" id="dewey" name="drone" value="dewey">
+            <label for="dewey">Dewey</label>
+          </div>
+          <div>
+            <input type="radio" id="louie" name="drone" value="louie">
+            <label for="louie">Louie</label>
+          </div>
+        </fieldset>
+
+      </fieldset>
+    </form>
+       </script>
+    </code>
+    </pre>
+      </div>
+    </section>
     <section id="headings">
       <h2 class="section-heading">Headings</h2>
       <div class="output">
@@ -84,54 +134,77 @@
       </div>
     </section>
     <section id="text-based-semantics">
-      <h2 class="section-heading">Text Based Semantics</h2>
+      <h2 class="section-heading">Text Based Sematics</h2>
       <div class="output">
-      <p>Lorem ipsum <em>dolor sit amet</em>, consectetur adipisicing elit. <strong>Ullam libero</strong> temporibus reiciendis repudiandae neque <del>debitis</del> laboriosam rem sunt facere ipsa expedita earum voluptatum suscipit, facilis itaque ipsam. <sub>Subscript</sub>Odio, aspernatur ut?<sup>Superscript</sup></p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, ducimus porro. Est incidunt nisi vel quia! Ipsa adipisci<hr /> dolore voluptatum animi. Magni explicabo praesentium est quisquam atque, omnis fugit veniam.
-      </p>
-    <address>
-    Katie Castro<br />
-    777 Angel st.<br />
-    Little Rock, AR,72204
-    </address>
+        <p>
+          <em>Lorem Ipsum</em> is simply dummy text of the
+          <strong>printing and typesetting industry</strong>. Lorem Ipsum has
+          been the industry's standard <del>dummy text</del> ever since the
+          1500s, when an unknown printer took a galley of type and scrambled it
+          to make a type specimen book.It has survived not only five centuries,
+          but also the leap into electronic typesetting, remaining essentially
+          unchanged.It was popularised in the 1960s with the release of Letraset
+          sheets containing Lorem Ipsum passages, and more recently with desktop
+          publishing software like Aldus PageMaker including versions of
+          <sub>Lorem</sub><sup>Ipsum</sup>.
+        </p>
+        <address>3900 Ludwig <br />Little Rock, AR, 72204</address>
       </div>
       <div class="markup">
         <pre>
-        <code class="language-markup">
-           <script type="text/plain" class="language-markup">
-    <p><em>Lorem Ipsum</em> is simply dummy text of the <strong>printing and
-    typesetting industry</strong>. Lorem Ipsum has been the industry's 
-    standard <del>dummy text</del> ever since the 1500s, when an unknown
-    printer took a galley of type and scrambled it to make a type
-    specimen book.It has survived not only five centuries, but 
-    also the leap into electronic typesetting, remaining essentially
-    unchanged.It was popularised in the 1960s with the release of
-    Letraset sheets containing Lorem Ipsum passages, and more
-    recently with desktop publishing software like Aldus 
-    PageMaker including versions of <sub>Lorem</sub><sup>Ipsum</sup>.
-        </p>
-        <address>
-          501 North Filmore<br />Little Rock, AR, 72205
-        </address>
-           </script>
-        </code>
-        </pre>
-        </div>
+    <code class="language-markup">
+       <script type="text/plain" class="language-markup">
+<p><em>Lorem Ipsum</em> is simply dummy text of the <strong>printing and
+typesetting industry</strong>. Lorem Ipsum has been the industry's 
+standard <del>dummy text</del> ever since the 1500s, when an unknown
+printer took a galley of type and scrambled it to make a type
+specimen book.It has survived not only five centuries, but 
+also the leap into electronic typesetting, remaining essentially
+unchanged.It was popularised in the 1960s with the release of
+Letraset sheets containing Lorem Ipsum passages, and more
+recently with desktop publishing software like Aldus 
+PageMaker including versions of <sub>Lorem</sub><sup>Ipsum</sup>.
+    </p>
+    <address>
+      3900 Ludwig <br />Little Rock, AR, 72204
+    </address>
+       </script>
+    </code>
+    </pre>
+      </div>
     </section>
-  <section id="table">
-    <h2 class="section-heading">Table</h2>
-    <div class="output">
-    <table border="1"><!--Remove border attribute before publishing-->
-      <caption>Grocery List</caption>
-      <tr><th scope="col">Item</th><th scope="col">Quantity</th><th scope="col">Cost</th></tr>
-      <tr><td>Soda</td><td>12</td><td>.50</td></tr>
-      <tr><td>Soda</td><td>12</td><td>.50</td></tr>
-      <tr><td>Soda</td><td>12</td><td>.50</td></tr>
-    </table>
-    </div>
-    <div class="markup">
-      <pre>
+    <section id="table">
+      <h2 class="section-heading">Table</h2>
+      <div class="output">
+        <table>
+          <!--Remove border attribute before publishing-->
+          <caption>
+            Grocery List
+          </caption>
+          <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Cost</th>
+          </tr>
+          <tr>
+            <td>Soda</td>
+            <td>12</td>
+            <td>.50</td>
+          </tr>
+          <tr>
+            <td>Soda</td>
+            <td>12</td>
+            <td>.50</td>
+          </tr>
+          <tr>
+            <td>Soda</td>
+            <td>12</td>
+            <td>.50</td>
+          </tr>
+        </table>
+      </div>
+      <div class="markup">
+        <pre>
       <code class="language-markup">
          <script type="text/plain" class="language-markup">
         <table border="1">
@@ -161,21 +234,19 @@
       </code>
       </pre>
       </div>
-  </section>
-    
-    
-    
+    </section>
+
     <section id="lists">
       <h2 class="section-heading">Lists</h2>
       <h3 class="section-heading">Unordered List</h3>
       <div class="output">
-      <ul> 
-        <li>List Item</li>
-        <li>List Item</li>
-        <li>List Item</li>
-        <li>List Item</li>
-        <li>List Item</li>
-      </ul>
+        <ul>
+          <li>List Item</li>
+          <li>List Item</li>
+          <li>List Item</li>
+          <li>List Item</li>
+          <li>List Item</li>
+        </ul>
       </div>
       <div class="markup">
         <pre>
@@ -193,13 +264,13 @@
       </div>
       <h3 class="section-heading">Ordered List</h3>
       <div class="output">
-      <ol>
-        <li>List Item</li>
-        <li>List Item</li>
-        <li>List Item</li>
-        <li>List Item</li>
-        <li>List Item</li>
-      </ol>
+        <ol>
+          <li>List Item</li>
+          <li>List Item</li>
+          <li>List Item</li>
+          <li>List Item</li>
+          <li>List Item</li>
+        </ol>
       </div>
       <div class="markup">
         <pre>
@@ -214,22 +285,22 @@
            </script>
         </code>
         </pre>
-        </div>
-        <h3 class="section-heading">Definition List</h3>
-        <div class="output">
-      <dl>
-        <dt>Definition Term</dt>
-        <dd>Definition Description</dd>
-        <dd>Definition Description</dd>
-        <dd>Definition Description</dd>
-        <dt>Definition Term</dt>
-        <dd>Definition Description</dd>
-        <dd>Definition Description</dd>
-        <dd>Definition Description</dd>
-      </dl>
-        </div>
-        <div class="markup">
-          <pre>
+      </div>
+      <h3 class="section-heading">Definition List</h3>
+      <div class="output">
+        <dl>
+          <dt>Definition Term</dt>
+          <dd>Definition Description</dd>
+          <dd>Definition Description</dd>
+          <dd>Definition Description</dd>
+          <dt>Definition Term</dt>
+          <dd>Definition Description</dd>
+          <dd>Definition Description</dd>
+          <dd>Definition Description</dd>
+        </dl>
+      </div>
+      <div class="markup">
+        <pre>
           <code class="language-markup">
              <script type="text/plain" class="language-markup">
            <dl>
@@ -246,27 +317,28 @@
              </script>
           </code>
           </pre>
-          </div>
-        <h3 class="section-heading">Nested List</h3>
-        <div class="output">
-      <ol>
-        <li>List Item</li>
-        <li>List Item</li>
-        <li>List Item
-         <ul>
-        <li>List Item</li>
-        <li>List Item</li>
-        <li>List Item</li>
-        <li>List Item</li>
-        <li>List Item</li>
-      </ul>
-        </li>
-        <li>List Item</li>
-        <li>List Item</li>
-      </ol>
-        </div>
-        <div class="markup">
-          <pre>
+      </div>
+      <h3 class="section-heading">Nested List</h3>
+      <div class="output">
+        <ol>
+          <li>List Item</li>
+          <li>List Item</li>
+          <li>
+            List Item
+            <ul>
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+              <li>List Item</li>
+            </ul>
+          </li>
+          <li>List Item</li>
+          <li>List Item</li>
+        </ol>
+      </div>
+      <div class="markup">
+        <pre>
         <code class="language-markup">
      <script type="text/plain" class="language-markup">
       <ol>
@@ -287,17 +359,23 @@
     </script>
   </code>
 </pre>
-
+      </div>
     </section>
     <section id="hyperlinks">
       <h2 class="section-heading">Hyperlinks</h2>
       <div class="output">
-      <ul>
-        <li><a href="https://ualr.edu#news" target="_blank">Absolute Link</a></li>
-        <li><a href="folder/folder/file.html" title="Relative Link Example">Relative Link</a></li>
-        <li><a href="#headings">Anchor Link</a></li>
-        <li><a href="mailto:email@address.com">Email Link</a></li>
-      </ul>
+        <ul>
+          <li>
+            <a href="https://ualr.edu#news" target="_blank">Absolute Link</a>
+          </li>
+          <li>
+            <a href="folder/folder/file.html" title="Relative Link Example"
+              >Relative Link</a
+            >
+          </li>
+          <li><a href="#headings">Anchor Link</a></li>
+          <li><a href="mailto:email@address.com">Email Link</a></li>
+        </ul>
       </div>
       <div class="markup">
         <pre>
@@ -322,8 +400,10 @@
       <h2 class="section-heading">Quotes</h2>
       <h3 class="section-heading">Blockquote</h3>
       <div class="output">
-      <blockquote>If you can't explain it simply, you don't understand it well enough. <cite>Albert Einstein</cite>       
-      </blockquote>
+        <blockquote>
+          If you can't explain it simply, you don't understand it well enough.
+          <cite>Albert Einstein</cite>
+        </blockquote>
       </div>
       <div class="markup">
         <pre>
@@ -335,25 +415,28 @@
            </script>
         </code>
         </pre>
-        </div>
-        <h3 class="section-heading">Inline Quote</h3>
-        <div class="output">
-      <p><q>Honey taste good!</q>said Pooh.</p>
-        </div>
-        <div class="markup">
-          <pre>
+      </div>
+      <h3 class="section-heading">Inline Quote</h3>
+      <div class="output">
+        <p><q>Honey taste good!</q>said Pooh.</p>
+      </div>
+      <div class="markup">
+        <pre>
           <code class="language-markup">
              <script type="text/plain" class="language-markup">
              <p><q>Honey tastes good</q> said Pooh.</p>
              </script>
           </code>
           </pre>
-          </div>
+      </div>
     </section>
     <section id="images">
       <h2 class="section-heading">Images</h2>
       <div class="output">
-        <img src="https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png" alt="UALR Logo">
+        <img
+          src="https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png"
+          alt="UALR Logo"
+        />
       </div>
       <div class="markup">
         <pre>
@@ -369,18 +452,18 @@
     <section id="structural-elements">
       <h2 class="section-heading">Structural Elements</h2>
       <div class="output">
-      <code>&lt;main&gt;</code><br>
-      <code>&lt;header&gt;</code><br>
-      <code>&lt;footer&gt;</code><br>
-      <code>&lt;nav&gt;</code><br>
-      <code>&lt;section&gt;</code><br>
-      <code>&lt;article&gt;</code><br>
-      <code>&lt;aside&gt;</code><br>
-      <code>&lt;figure&gt;</code><br>
-      <code>&lt;figcaption&gt;</code>
-    </div>
-    <div class="markup">
-    <pre>
+        <code>&lt;main&gt;</code><br />
+        <code>&lt;header&gt;</code><br />
+        <code>&lt;footer&gt;</code><br />
+        <code>&lt;nav&gt;</code><br />
+        <code>&lt;section&gt;</code><br />
+        <code>&lt;article&gt;</code><br />
+        <code>&lt;aside&gt;</code><br />
+        <code>&lt;figure&gt;</code><br />
+        <code>&lt;figcaption&gt;</code>
+      </div>
+      <div class="markup">
+        <pre>
     <code class="language-markup">
        <script type="text/plain" class="language-markup">
   <main>
@@ -395,9 +478,8 @@
        </script>
     </code>
     </pre>
-    </div>
+      </div>
     </section>
-  <footer>&copy; 2024 Katie Castro</footer>
+    <footer>&copy; 2024 Katie Castro</footer>
   </body>
 </html>
-
