@@ -9,15 +9,16 @@ function calculate() {
     var operand1fp = parseFloat(operand1);
     var operand2fp = parseFloat(operand2);
 
-    if (document.getElementById("AvgOperator").checked) {
-      operator = document.getElementById("AvgOperator").value;
+    if (document.getElementById("SumOperator").checked) {
+      operator = document.getElementById("SumOperator").value;
     }
 
 
     /* if operator was "Avg" the calcualute the average of 3 operands */
-    if (operator == "Avg") {
-      result = (operand1fp + operand2fp) / 2.0;
+    if (operator == "Sum") {
+      result = (operand1fp + operand2fp);
     }
+     
 
     /* convert the result to a string and display it */
     document.getElementById("Result").innerHTML = result.toString();
@@ -28,9 +29,10 @@ function clearform() {
   /* Set all of the form values to blank or false */
   document.getElementById("Operand1").value = "";
   document.getElementById("Operand2").value = "";
-  document.getElementById("Operand3").value = "";
   document.getElementById("Operand1Error").innerHTML = "";
   document.getElementById("Operand2Error").innerHTML = "";
+  document.getElementById("SumOperator").checked = false;
+  document.getElementById("MinOperator").checked = false;
   document.getElementById("OperatorError").innerHTML = "";
   document.getElementById("Result").innerHTML = "";
 }
