@@ -12,11 +12,14 @@ function calculate() {
     if (document.getElementById("SumOperator").checked) {
       operator = document.getElementById("SumOperator").value;
     }
-
-
-    /* if operator was "Avg" the calcualute the average of 3 operands */
     if (operator == "Sum") {
       result = (operand1fp + operand2fp);
+    }
+    if (document.getElementById("SubOperator").checked) {
+      operator = document.getElementById("SubOperator").value;
+    }
+    if (operator == "Sub") {
+      result = (operand1fp - operand2fp);
     }
      
 
@@ -32,7 +35,7 @@ function clearform() {
   document.getElementById("Operand1Error").innerHTML = "";
   document.getElementById("Operand2Error").innerHTML = "";
   document.getElementById("SumOperator").checked = false;
-  document.getElementById("MinOperator").checked = false;
+  document.getElementById("SubOperator").checked = false;
   document.getElementById("OperatorError").innerHTML = "";
   document.getElementById("Result").innerHTML = "";
 }
