@@ -1,51 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Circle Calculations</title>
-    <meta charset ="utf-8"> 
+    <meta charset="utf-8" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+  </head>
 
-<!-- The following should be a file in the "style" folder -->
-    <style>
-    .formlabel {
-        display: inline-block;
-        width: 200px;
-        text-align: right;
-        padding: 5px;
-        font-weight: bold;
-    }
-
-    .error {
-        color: red;
-        padding-left: 5px;
-    }
-    </style>
-</head>
-
-<body>
+  <body>
     <form id="CircleForm">
-        <h2>Circle Calculations</h2>
-        <label for="radius" class="formlabel">Enter radius of a circle:</label>
-        <input type="text" id="radius" name="radius"
-               data-rule-required="true"  data-msg-required="Radius is Required" 
-               data-rule-number="true" data-msg-number="Radius must be floating point number"
-               data-rule-min="0" data-msg-min="Radius must be greater than zero">
-        <label for="radius" class="error" id="radiuserror"></label>
-        <br>
-        
-        <label for="diameter" class="formlabel">Diameter:</label><span id="diameter"></span><br>
-        <label for="circumference" class="formlabel">Circumference:</label><span id="circumference"></span><br>
-        <label for="area" class="formlabel">Area:</label><span id="area"></span><br>
-        <br><br>
-        <input type="submit" value="Calculate" id="btnSubmit">
-        <input type="submit" value="Clear" id="btnSubmit">
-    </form>
-</body>
-<script>
-$( "#CircleForm" ).validate({
+      <h2>Circle Calculations</h2>
+      <label for="radius" class="formlabel">Enter radius of a circle:</label>
+      <input
+        type="text"
+        id="radius"
+        name="radius"
+        data-rule-required="true"
+        data-msg-required="Radius is Required"
+        data-rule-number="true"
+        data-msg-number="Radius must be floating point number"
+        data-rule-min="0"
+        data-msg-min="Radius must be greater than zero"
+      />
+      <label for="radius" class="error" id="radiuserror"></label>
+      <br />
 
-});
-</script>
+      <label for="diameter" class="formlabel">Diameter:</label
+      ><span id="diameter"></span><br />
+      <input
+        type="text"
+        id="diameter"
+        name="diameter"
+        data-rule-required="true"
+        data-msg-required="Diameter is Required"
+        data-rule-number="true"
+        data-msg-number="Diameter must be a floating point number"
+        data-rule-min="0"
+        data-msg-min="Diameter must be greater than zero"
+      />
+      <label for="diameter" class="error" id="diametererror"></label>
+      <br />
+
+      <label for="circumference" class="formlabel">Circumference:</label
+      ><span id="circumference"></span><br />
+      <input
+        type="text"
+        id="circumference"
+        name="circumference"
+        data-rule-required="true"
+        data-msg-required="Circumference is Required"
+        data-rule-number="true"
+        data-msg-number="Circumference must be a floating point number"
+        data-rule-min="0"
+        data-msg-min="Circumference must be greater than zero"
+      />
+      <label for="circumference" class="error" id="circumferenceerror"></label>
+      <br />
+      <label for="area" class="formlabel">Area:</label><span id="area"></span
+      ><br />
+      <input
+        type="text"
+        id="area"
+        name="area"
+        data-rule-required="true"
+        data-msg-required="Area is Required"
+        data-rule-number="true"
+        data-msg-number="Area must be a floating point number"
+        data-rule-min="0"
+        data-msg-min="Area must be greater than zero"
+      />
+      <label for="area" class="error" id="areaerror"></label>
+      <br />
+      <br /><br />
+      <input type="submit" value="Calculate" id="btnSubmit" />
+      <input type="submit" value="Clear" id="btnSubmit" />
+    </form>
+  </body>
+  <script>
+    $("#CircleForm").validate({});
+  </script>
 </html>
