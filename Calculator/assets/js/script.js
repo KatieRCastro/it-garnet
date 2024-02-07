@@ -21,7 +21,18 @@ function calculate() {
     if (operator == "Sub") {
       result = (operand1fp - operand2fp);
     }
-     
+     if (document.getElementById("MulOperator").checked) {
+       operator = document.getElementById("MulOperator").value;
+     }
+     if (operator == "Mul") {
+       result = (operand1fp * operand2fp);
+     }
+     if (document.getElementById("DivOperator").checked) {
+       operator = document.getElementById("DivOperator").value;
+     }
+     if (operator == "Div") {
+       result = (operand1fp / operand2fp);
+     }
 
     /* convert the result to a string and display it */
     document.getElementById("Result").innerHTML = result.toString();
@@ -36,6 +47,8 @@ function clearform() {
   document.getElementById("Operand2Error").innerHTML = "";
   document.getElementById("SumOperator").checked = false;
   document.getElementById("SubOperator").checked = false;
+  document.getElementById("MulOperator").checked = false;
+  document.getElementById("DivOperator").checked = false;
   document.getElementById("OperatorError").innerHTML = "";
   document.getElementById("Result").innerHTML = "";
 }
