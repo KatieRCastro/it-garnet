@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="description" content="Unit Converter" />
+   <meta name="keywords" content="JavaScript, HTML, CSS" />
+   <meta name="author" content="Katie Castro" />
+   <title>Unit Converter (AJAX)</title>
+   <link rel="stylesheet" type="text/css" href="assets/style/style.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+ </head>
+ <body>
+   <form id="myform">
+     <div class="formcontainer" onsubmit="return false">
+       <h1>Unit Converter (AJAX)</h1>
+       <fieldset id="detail">
+         <legend>Unit Converter (AJAX)</legend>
+         <br />
+
+
+         <label class="formlabel" for="FromValue">From Value: </label>
+         <input
+           type="text"
+           id="FromValue"
+           name="FromValue"
+           size="15"
+           maxlength="15"
+           data-rule-required="true"
+           data-msg-required="Value is Required"
+           data-rule-number="true"
+           data-msg-number="Value must be a Number"
+         />
+         <label class="error" for="FromValue" id="FromValueError"></label>
+         <br /><br />
+
+
+         <label class="formlabel">From Unit: </label>
+         <label for="CentimetersOperator">
+           <input
+             type="radio"
+             name="Operator"
+             id="CentimetersOperator"
+             value="Centimeters"
+             class="error"
+             aria-invalid="false"
+             data-rule-required="true"
+             data-msg-required="From Unit is Required"
+           />centimeters
+         </label>
+         <label for="MetersOperator">
+           <input
+             type="radio"
+             name="Operator"
+             id="MetersOperator"
+             value="Meters"
+             class="error"
+             aria-invalid="false"
+           />meters
+         </label>
+         <label for="KilometersOperator">
+           <input
+             type="radio"
+             name="Operator"
+             id="KilometersOperator"
+             value="Kilometers"
+             class="error"
+             aria-invalid="false"
+           />kilometers
+         </label>
+         <label for="InchesOperator">
+           <input
+             type="radio"
+             name="Operator"
+             id="InchesOperator"
+             value="Inches"
+             class="error"
+             aria-invalid="false"
+           />inches
+         </label>
+         <label for="FeetOperator">
+           <input
+             type="radio"
+             name="Operator"
+             id="FeetOperator"
+             value="Feet"
+             class="error"
+             aria-invalid="false"
+           />feet
+         </label>
+         <label for="YardsOperator">
+           <input
+             type="radio"
+             name="Operator"
+             id="YardsOperator"
+             value="Yards"
+             class="error"
+             aria-invalid="false"
+           />yards
+         </label>
+         <label for="MilesOperator">
+           <input
+             type="radio"
+             name="Operator"
+             id="MilesOperator"
+             value="Miles"
+             class="error"
+             aria-invalid="false"
+              data-rule-required="true"
+             data-msg-required="To Unit is Required"
+           />miles
+         </label>
+         <br /><br />
+         <label class="formlabel">To Unit: </label>
+         <label for="CentimetersOperator">
+           <input
+             type="radio"
+             name="Operator"
+             id="CentimetersOperator"
+             value="Centimeters"
+             class="error"
+             aria-invalid="false"
+              data-rule-required="true"
+             data-msg-required="To Unit is Required"
+           />centimeters
+         </label>
+         <label for="MetersOperator">
+           <input
+             type="radio"
+             name="Operator"
+             id="MetersOperator"
+             value="Meters"
+             class="error"
+             aria-invalid="false"
+           />meters
+         </label>
+         <label for="KilometersOperator">
+           <input
+             type="radio"
+             name="Operator"
+             id="KilometersOperator"
+             value="Kilometers"
+             class="error"
+             aria-invalid="false"
+           />kilometers
+         </label>
+         <label for="InchesOperator">
+           <input
+             type="radio"
+             name="Operator"
+             id="InchesOperator"
+             value="Inches"
+             class="error"
+             aria-invalid="false"
+           />inches
+         </label>
+         <label for="FeetOperator">
+           <input
+             type="radio"
+             name="Operator"
+             id="FeetOperator"
+             value="Feet"
+             class="error"
+             aria-invalid="false"
+           />feet
+         </label>
+         <label for="YardsOperator">
+           <input
+             type="radio"
+             name="Operator"
+             id="YardsOperator"
+             value="Yards"
+             class="error"
+             aria-invalid="false"
+           />yards
+         </label>
+         <label for="MilesOperator">
+           <input
+             type="radio"
+             name="Operator"
+             id="MilesOperator"
+             value="Miles"
+             class="error"
+             aria-invalid="false"
+           />miles
+         </label>
+
+
+         <label for="Operator" class="error" id="OperatorError"></label>
+         <br /><br />
+
+
+         <label class="formlabel">To Value: </label>
+         <span id="ToValue"></span>
+         <br /><br />
+
+
+         <input
+           type="button"
+           value="Calculate"
+           name="Calculate"
+           onclick="calculate();"
+           class="valid"
+           aria-invalid="false"
+         />
+         <input
+           type="button"
+           value="Clear"
+           name="Clear"
+           onclick="clearform();"
+           novalidate
+           class="valid"
+           aria-invalid="false"
+         />
+       </fieldset>
+     </div>
+   </form>
+   <script src="assets/script/script.js"></script>
+ </body>
+</html>
