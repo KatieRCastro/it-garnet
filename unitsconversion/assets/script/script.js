@@ -64,7 +64,24 @@ function clearform() {
 
   /* Set all of the form values to blank or false */
   document.getElementById("FromValue").value = "";
-  document.getElementById("From Unit").value = "";
+  document.getElementById("FromValueError").innerHTML = "";
+  document.getElementById("CentimetersOperator").checked = false;
+  document.getElementById("MetersOperator").checked = false;
+  document.getElementById("KilometersOperator").checked = false;
+  document.getElementById("InchesOperator").checked = false;
+  document.getElementById("FeetOperator").checked = false;
+  document.getElementById("YardsOperator").checked = false;
+  document.getElementById("MilesOperator").checked = false;
+  document.getElementById("OperatorError").innerHTML = "";
+  document.getElementById("CentimetersOperator2").checked = false;
+  document.getElementById("MetersOperator2").checked = false;
+  document.getElementById("KilometersOperator2").checked = false;
+  document.getElementById("InchesOperator2").checked = false;
+  document.getElementById("FeetOperator2").checked = false;
+  document.getElementById("YardsOperator2").checked = false;
+  document.getElementById("MilesOperator2").checked = false;
+  document.getElementById("Operator2Error").innerHTML = "";
+   document.getElementById("Result").innerHTML = "";
   
  
 }
