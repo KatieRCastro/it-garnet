@@ -65,6 +65,7 @@ function clearform() {
   /* Set all of the form values to blank or false */
   document.getElementById("FromValue").value = "";
   document.getElementById("From Unit").value = "";
+  
  
 }
 

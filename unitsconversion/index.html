@@ -42,19 +42,20 @@
              type="radio"
              name="Operator"
              id="CentimetersOperator"
-             value="Centimeters"
+             value="cm"
              class="error"
              aria-invalid="false"
              data-rule-required="true"
-             data-msg-required="From Unit is Required"
+             data-msg-required="To Unit is Required"
            />centimeters
          </label>
+
          <label for="MetersOperator">
            <input
              type="radio"
              name="Operator"
              id="MetersOperator"
-             value="Meters"
+             value="m"
              class="error"
              aria-invalid="false"
            />meters
@@ -64,7 +65,7 @@
              type="radio"
              name="Operator"
              id="KilometersOperator"
-             value="Kilometers"
+             value="km"
              class="error"
              aria-invalid="false"
            />kilometers
@@ -74,7 +75,7 @@
              type="radio"
              name="Operator"
              id="InchesOperator"
-             value="Inches"
+             value="in"
              class="error"
              aria-invalid="false"
            />inches
@@ -84,7 +85,7 @@
              type="radio"
              name="Operator"
              id="FeetOperator"
-             value="Feet"
+             value="ft"
              class="error"
              aria-invalid="false"
            />feet
@@ -94,7 +95,7 @@
              type="radio"
              name="Operator"
              id="YardsOperator"
-             value="Yards"
+             value="yd"
              class="error"
              aria-invalid="false"
            />yards
@@ -104,15 +105,16 @@
              type="radio"
              name="Operator"
              id="MilesOperator"
-             value="Miles"
+             value="mi"
              class="error"
              aria-invalid="false"
               data-rule-required="true"
-             data-msg-required="To Unit is Required"
+             data-msg-required="From Unit is Required"
            />miles
-         </label>
+            <label for="Operator" class="error" id="OperatorError"></label>
          <br /><br />
-         <label class="formlabel">To Unit: </label>
+
+         <label class="formlabel">To Unit:</label>
          <label for="CentimetersOperator">
            <input
              type="radio"
@@ -122,7 +124,7 @@
              class="error"
              aria-invalid="false"
               data-rule-required="true"
-             data-msg-required="To Unit is Required"
+             data-msg-required="From Unit is Required"
            />centimeters
          </label>
          <label for="MetersOperator">
