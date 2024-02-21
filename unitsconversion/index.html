@@ -37,6 +37,7 @@
 
 
          <label class="formlabel">From Unit: </label>
+
          <label for="CentimetersOperator">
            <input
              type="radio"
@@ -109,87 +110,89 @@
              class="error"
              aria-invalid="false"
            />miles
+         </label>
             <label for="FromUnit" class="error" id="FromUnitError"></label>
          <br /><br />
 
          <label class="formlabel">To Unit:</label>
-         <label for="CentimetersOperator">
+
+         <label for="CentimetersOperator2">
            <input
              type="radio"
              name="ToUnit"
              id="CentimetersOperator2"
-             value="Centimeters"
+             value="cm"
              class="error"
              aria-invalid="false"
-               data-rule-required="true"
+             data-rule-required="true"
              data-msg-required="To Unit is Required"
            />centimeters
          </label>
-         <label for="MetersOperator">
+
+         <label for="MetersOperator2">
            <input
              type="radio"
              name="ToUnit"
              id="MetersOperator2"
-             value="Meters"
+             value="m"
              class="error"
              aria-invalid="false"
            />meters
          </label>
-         <label for="KilometersOperator">
+         <label for="KilometersOperator2">
            <input
              type="radio"
              name="ToUnit"
              id="KilometersOperator2"
-             value="Kilometers"
+             value="km"
              class="error"
              aria-invalid="false"
            />kilometers
          </label>
-         <label for="InchesOperator">
+         <label for="InchesOperator2">
            <input
              type="radio"
              name="ToUnit"
              id="InchesOperator2"
-             value="Inches"
+             value="in"
              class="error"
              aria-invalid="false"
            />inches
          </label>
-         <label for="FeetOperator">
+         <label for="FeetOperator2">
            <input
              type="radio"
              name="ToUnit"
              id="FeetOperator2"
-             value="Feet"
+             value="ft"
              class="error"
              aria-invalid="false"
            />feet
          </label>
-         <label for="YardsOperator">
+         <label for="YardsOperator2">
            <input
              type="radio"
              name="ToUnit"
              id="YardsOperator2"
-             value="Yards"
+             value="yd"
              class="error"
              aria-invalid="false"
            />yards
          </label>
-         <label for="MilesOperator">
+         <label for="MilesOperator2">
            <input
              type="radio"
              name="ToUnit"
              id="MilesOperator2"
-             value="Miles"
+             value="m"
              class="error"
              aria-invalid="false"
            />miles
          </label>
 
 
-         <label for="ToUnit" class="error" id="ToUnitError"></label>
-         <br /><br />
-
+       <label for="ToUnit" class="error" id="ToUnitError" data-rule-required="true" data-msg-required="To Unit is Required"></label>
+<br /><br />
 
          <label class="formlabel">To Value: </label>
          <span id="ToValue"></span>

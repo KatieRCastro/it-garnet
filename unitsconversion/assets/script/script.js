@@ -4,9 +4,11 @@ function convert() {
   var form = $("#myform");
 
   if (form.valid()) {
-    var FromValue = $("#FromValue").val();
-    var FromUnit = $("input[name='FromUnit']:checked").val();
-    var ToUnit = $("input[name='ToUnit']:checked").val();
+    var FromValue = document.getElementById("FromValue").value;
+    var FromUnit = document.querySelector(
+      'input[name="FromUnit"]:checked'
+    ).value;
+    var ToUnit = document.querySelector('input[name="ToUnit"]:checked').value;
     convertUnits(FromValue, FromUnit, ToUnit);
   }
 }
@@ -24,7 +26,7 @@ async function convertUnits(FromValue, FromUnit, ToUnit) {
   let response = await fetch(myURL);
   let myResult = await response.text();
 
-  $("#ToValue").html(myResult);
+  document.getElementById("ToValue").innerHTML = myResult;
 }
 
 function clearform() {
