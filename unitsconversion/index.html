@@ -40,7 +40,7 @@
          <label for="CentimetersOperator">
            <input
              type="radio"
-             name="Operator"
+             name="FromUnit"
              id="CentimetersOperator"
              value="cm"
              class="error"
@@ -53,7 +53,7 @@
          <label for="MetersOperator">
            <input
              type="radio"
-             name="Operator"
+             name="FromUnit"
              id="MetersOperator"
              value="m"
              class="error"
@@ -63,7 +63,7 @@
          <label for="KilometersOperator">
            <input
              type="radio"
-             name="Operator"
+             name="FromUnit"
              id="KilometersOperator"
              value="km"
              class="error"
@@ -73,7 +73,7 @@
          <label for="InchesOperator">
            <input
              type="radio"
-             name="Operator"
+             name="FromUnit"
              id="InchesOperator"
              value="in"
              class="error"
@@ -83,7 +83,7 @@
          <label for="FeetOperator">
            <input
              type="radio"
-             name="Operator"
+             name="FromUnit"
              id="FeetOperator"
              value="ft"
              class="error"
@@ -93,7 +93,7 @@
          <label for="YardsOperator">
            <input
              type="radio"
-             name="Operator"
+             name="FromUnit"
              id="YardsOperator"
              value="yd"
              class="error"
@@ -103,20 +103,20 @@
          <label for="MilesOperator">
            <input
              type="radio"
-             name="Operator"
+             name="FromUnit"
              id="MilesOperator"
              value="mi"
              class="error"
              aria-invalid="false"
            />miles
-            <label for="Operator" class="error" id="OperatorError"></label>
+            <label for="FromUnit" class="error" id="FromUnitError"></label>
          <br /><br />
 
          <label class="formlabel">To Unit:</label>
          <label for="CentimetersOperator">
            <input
              type="radio"
-             name="Operator2"
+             name="ToUnit"
              id="CentimetersOperator2"
              value="Centimeters"
              class="error"
@@ -128,7 +128,7 @@
          <label for="MetersOperator">
            <input
              type="radio"
-             name="Operator2"
+             name="ToUnit"
              id="MetersOperator2"
              value="Meters"
              class="error"
@@ -138,7 +138,7 @@
          <label for="KilometersOperator">
            <input
              type="radio"
-             name="Operator2"
+             name="ToUnit"
              id="KilometersOperator2"
              value="Kilometers"
              class="error"
@@ -148,7 +148,7 @@
          <label for="InchesOperator">
            <input
              type="radio"
-             name="Operator2"
+             name="ToUnit"
              id="InchesOperator2"
              value="Inches"
              class="error"
@@ -158,7 +158,7 @@
          <label for="FeetOperator">
            <input
              type="radio"
-             name="Operator2"
+             name="ToUnit"
              id="FeetOperator2"
              value="Feet"
              class="error"
@@ -168,7 +168,7 @@
          <label for="YardsOperator">
            <input
              type="radio"
-             name="Operator2"
+             name="ToUnit"
              id="YardsOperator2"
              value="Yards"
              class="error"
@@ -178,7 +178,7 @@
          <label for="MilesOperator">
            <input
              type="radio"
-             name="Operator2"
+             name="ToUnit"
              id="MilesOperator2"
              value="Miles"
              class="error"
@@ -187,7 +187,7 @@
          </label>
 
 
-         <label for="Operator2" class="error" id="Operator2Error"></label>
+         <label for="ToUnit" class="error" id="ToUnitError"></label>
          <br /><br />
 
 
@@ -200,7 +200,7 @@
            type="button"
            value="Calculate"
            name="Calculate"
-           onclick="calculate();"
+           onclick="convert();"
            class="valid"
            aria-invalid="false"
          />
