@@ -23,28 +23,6 @@ img {
 
 /* ---------------Global Style----------------- */
 
-body {
-  margin: 0;
-  padding: 0;
-}
-header {
-  position: absolute;
-  color: white;
-  font-size: 40px;
-}
-#nav {
-  position: absolute;
-  color: white;
-}
-
-#nav  li {
-  list-style-type: none;
-}
-#nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
 video {
   object-fit: cover;
   width: 100vw;
@@ -52,4 +30,25 @@ video {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+body {
+}
+
+header.primary {
+  color: white;
+  position: absolute;
+  font-size: 35px;
+}
+nav.primary {
+  color: white;
+  position: absolute;
+}
+nav.primary ul {
+  color: white;
+  list-style: none;
+}
+nav.primary ul li a {
+  color: white;
+  text-decoration: none;
 }
