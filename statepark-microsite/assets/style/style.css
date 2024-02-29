@@ -33,6 +33,9 @@ video {
 }
 
 body {
+  font-family: "oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header.primary {
@@ -42,13 +45,20 @@ header.primary {
 }
 nav.primary {
   color: white;
-  position: absolute;
+  
 }
 nav.primary ul {
+  position: absolute;
   color: white;
   list-style: none;
+  display: flex;
+  background: rgba(0, 0, 0, 0.3);
 }
-nav.primary ul li a {
+nav.primary li {
+   margin-right: 20px;
   color: white;
+}
+nav.primary a {
   text-decoration: none;
+  color: white;
 }
