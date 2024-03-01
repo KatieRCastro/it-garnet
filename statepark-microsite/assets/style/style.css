@@ -41,24 +41,50 @@ body {
 header.primary {
   color: white;
   position: absolute;
-  font-size: 35px;
+  text-shadow: 1px 1px 1px #000000;
+  display: flex;
+  flex-direction: column;
 }
+
+header.primary h1 {
+  font-size: 90px;
+  padding-top: 130px;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+header.primary h3 {
+  color: white;
+  margin-left: 25px;
+  margin-top: 0;
+  font-size: 45px;
+}
+
 nav.primary {
   color: white;
-  
+  width: 100%;
 }
 nav.primary ul {
+  width: 100%;
   position: absolute;
   color: white;
   list-style: none;
   display: flex;
-  background: rgba(0, 0, 0, 0.3);
+  justify-content: flex-end;
+  font-size: 20px;
 }
 nav.primary li {
-   margin-right: 20px;
   color: white;
+  margin-right: 20px;
+  text-shadow: 1px 1px 1px #000000;
 }
 nav.primary a {
   text-decoration: none;
   color: white;
+  margin-left: 20px;
+  margin-right: 20px;
 }
+nav.primary a:hover {
+  color: yellow;
+}
+
+
