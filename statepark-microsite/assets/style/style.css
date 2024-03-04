@@ -36,6 +36,7 @@ body {
   font-family: "oswald", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
 }
 
 header.primary {
@@ -144,6 +145,7 @@ nav.secondary a:hover {
 
 section {
   text-align: left;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
+
