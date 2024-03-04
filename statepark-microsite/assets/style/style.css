@@ -94,7 +94,6 @@ header.secondary {
   display: flex;
   flex-direction: column;
   background-image: url(../media/mountain.webp);
-  opacity: ;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -148,4 +147,26 @@ section {
   padding-left: 200px;
   padding-right: 200px;
 }
+img {
+margin-top: 50px;
+}
 
+footer { 
+  background-color:#172618;
+  color:#ffffff;
+  clear: both;
+  text-align: center;
+  margin-top: 50px;
+}
+footer h6{
+  padding:20px;
+  margin:0;
+  text-align:center;
+  font-size:.7rem;
+  text-transform:uppercase;
+}
+
+footer h6 a{
+  color: #ffffff;
+  text-decoration:underline;
+}
