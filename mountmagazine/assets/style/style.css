@@ -44,6 +44,7 @@ body {
   overflow-x: hidden;
 }
 
+
 header.primary {
   color: white;
   position: absolute;
@@ -76,7 +77,7 @@ nav.primary ul {
   list-style: none;
   display: flex;
   justify-content: flex-end;
-  font-size: 21px;
+  font-size: 19px;
 }
 nav.primary li {
   color: white;
@@ -124,7 +125,7 @@ nav.secondary ul {
   list-style: none;
   display: flex;
   justify-content: flex-end;
-  font-size: 21px;
+  font-size: 19px;
 }
 nav.secondary li {
   color: white;
