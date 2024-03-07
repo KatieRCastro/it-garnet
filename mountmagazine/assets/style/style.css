@@ -58,6 +58,7 @@ header.primary h1 {
   margin-left: 20px;
   margin-bottom: 0;
   color: white;
+  border-bottom: none;
 }
 header.primary h2 {
   color: white;
@@ -157,6 +158,8 @@ h1 {
   font-size: 80px;
   margin-bottom: 85px;
   color: #172618;
+  border-bottom: #fdb727 solid 10px;
+  width: 800px;
 }
 
 section {
@@ -188,7 +191,7 @@ img {
   width: 100%;
 }
 .slick-slide {
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 .container {
@@ -216,7 +219,6 @@ img {
 .slick-autoplay-toggle-button:focus {
   color: black;
 }
-
 
 footer {
   background-color: #172618;
