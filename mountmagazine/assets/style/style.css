@@ -133,6 +133,7 @@ section h3 {
   border-left: #172618 solid 5px;
   height: fit-content;
   padding-left: 10px;
+  margin-top: 40px;
 }
 
 nav.secondary {
@@ -166,6 +167,10 @@ h1 {
   color: #172618;
   border-bottom: #fdb727 solid 10px;
   width: 800px;
+}
+
+#lodge h1 {
+  margin-bottom: 40px;
 }
 
 section {
