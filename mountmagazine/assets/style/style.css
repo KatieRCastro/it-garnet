@@ -12,9 +12,7 @@ html {
 
 .container {
   max-width: 960px;
-  width: 800vw;
   min-height: 100vh;
-  margin: 40px auto;
 }
 
 /*----------------responsive images---------------*/
@@ -34,7 +32,7 @@ video {
 }
 
 body {
-   font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
   margin: 0;
@@ -45,8 +43,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-
 
 header.primary {
   color: white;
@@ -61,12 +57,26 @@ header.primary h1 {
   padding-top: 130px;
   margin-left: 20px;
   margin-bottom: 0;
+  color: white;
 }
 header.primary h2 {
   color: white;
-  margin-left: 25px;
+  margin-left: 23px;
   margin-top: 0;
   font-size: 40px;
+  margin-bottom: 65px;
+}
+header.primary a {
+  text-decoration: none;
+  margin-left: 24px;
+  color: white;
+  font-size: 20px;
+  margin-top: 0;
+  padding: 10px 15px;
+  background-color: #fdb727;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  width: fit-content;
 }
 
 nav.primary {
@@ -94,7 +104,7 @@ nav.primary a {
   margin-right: 20px;
 }
 nav.primary a:hover {
-  color: yellow;
+  color: #fdb727;
 }
 
 header.secondary {
@@ -141,19 +151,41 @@ nav.secondary a {
   margin-right: 20px;
 }
 nav.secondary a:hover {
-  color: yellow;
+  color: #fdb727;
 }
 h1 {
-  font-size: 50px;
+  font-size: 80px;
+  margin-bottom: 85px;
+  color: #172618;
 }
 
 section {
   text-align: left;
-  padding-left: 300px;
-  padding-right: 300px;
+  min-width: 400px;
+  margin: 0 200px;
 }
 img {
   margin-top: 50px;
+}
+#contact-content.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.form-heading {
+  margin-bottom: 0;
+}
+.form-heading h1 {
+  margin-top: 225px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#contact-content #wufoo-z1j3laf6151etfu {
+  width: 100%;
 }
 
 footer {
@@ -162,7 +194,8 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  position: absolute;
+  margin-top: 190px;
+  padding: 50px;
 }
 footer h6 {
   padding: 20px;
