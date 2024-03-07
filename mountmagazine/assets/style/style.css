@@ -79,6 +79,9 @@ header.primary a {
   transition: background-color 0.3s ease;
   width: fit-content;
 }
+header.primary a:hover {
+  background-color: #172618;
+}
 
 nav.primary {
   color: white;
