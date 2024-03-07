@@ -128,6 +128,12 @@ header.secondary h2 {
   margin-top: 0;
   font-size: 40px;
 }
+section h3 {
+  color: #fdb727;
+  border-left: #172618 solid 5px;
+  height: fit-content;
+  padding-left: 10px;
+}
 
 nav.secondary {
   width: 100%;
@@ -142,12 +148,12 @@ nav.secondary ul {
   font-size: 19px;
 }
 nav.secondary li {
-  color: white;
+  color: #172618;
   margin-right: 20px;
 }
 nav.secondary a {
   text-decoration: none;
-  color: black;
+  color: #172618;
   margin-left: 20px;
   margin-right: 20px;
 }
