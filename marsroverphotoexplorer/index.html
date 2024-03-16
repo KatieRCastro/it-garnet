@@ -36,18 +36,8 @@
           </tr>
         </table>
         <h2>Select a rover and a picture date:</h2>
-
-        <label for="roveroperator">
-           <input
-             type="radio"
-             name="rover"
-             id="roveroperator"
-             value="rover"
-             class="error"
-             aria-invalid="false"
-           />Rover
-         </label>
-          <label for="curiosityoperator">
+        <label class="formlabel">Rover: </label>
+         <label for="curiosityoperator">
            <input
              type="radio"
              name="curiosity"
@@ -56,6 +46,26 @@
              class="error"
              aria-invalid="false"
            />Curiosity
+         </label>
+        <label for="opportunityoperator">
+           <input
+             type="radio"
+             name="opportunity"
+             id="opportunityoperator"
+             value="opportunity"
+             class="error"
+             aria-invalid="false"
+           />Opportunity
+         </label>
+          <label for="spiritoperator">
+           <input
+             type="radio"
+             name="spirit"
+             id="spiritoperator"
+             value="spirit"
+             class="error"
+             aria-invalid="false"
+           />Spirit
          </label>
          <br><br>
 
@@ -69,9 +79,25 @@
            data-rule-required="true"
            data-msg-required="Date is Required"
          />
-
          <label class="error" for="picturedate" id="picturedateError"></label>
          <br /><br />
+          <input
+           type="button"
+           value="Search"
+           name="Search"
+           onclick="search();"
+           class="valid"
+           aria-invalid="false"
+         />
+         <input
+           type="button"
+           value="Clear"
+           name="Clear"
+           onclick="clearform();"
+           novalidate
+           class="valid"
+           aria-invalid="false"
+         />
 
          
 
