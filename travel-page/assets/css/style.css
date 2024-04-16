@@ -2,9 +2,9 @@
   --main-bg-color: #fffcf0;
   --primary-type-color: #26261a;
   --accent-main: #54878c;
-  --accent-secondary: #84B4BF;
+  --accent-secondary: #84b4bf;
   --accent-hover: #d99441;
-  --secondary-bg-color: #3F402D;
+  --secondary-bg-color: #3f402d;
 }
 
 html {
@@ -17,8 +17,8 @@ html {
 }
 
 body {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   font-family: "Commissioner", sans-serif;
   background-color: var(--main-bg-color);
   color: var(--primary-type-color);
@@ -26,6 +26,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 main {
@@ -41,7 +42,7 @@ main {
 #header {
   height: 50vh;
   position: relative;
-  background-image: url(../img/bf-header-mobile.jpg);
+  background-image: url("../img/br-header-m.jpg");
   background-size: cover;
 
   h1 {
@@ -57,7 +58,7 @@ main {
 nav {
   height: 60px;
   background-color: rgba(0, 0, 0, 0.288);
-  display:flex;
+  display: flex;
   justify-content: flex-end;
   align-items: center;
 
@@ -66,9 +67,9 @@ nav {
     align-items: center;
     text-decoration: none;
     color: var(--main-bg-color);
-  
+
     height: auto;
-    width:100%;
+    width: 100%;
     padding: 20px 30px;
     justify-content: flex-start;
   }
@@ -77,7 +78,7 @@ nav {
   }
 
   .logo {
-    width:fit-content;
+    width: fit-content;
     margin-right: auto;
   }
 
@@ -92,21 +93,21 @@ nav {
   align-items: flex-start;
 
   position: absolute;
-  top:0;
-  right:0;
+  top: 0;
+  right: 0;
   z-index: 10;
   width: 300px;
 
   background-color: var(--primary-type-color);
-  box-shadow: -5px 0 5px rgba(0,0,0,0.25);
-
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
 }
 
 #sidebar-active {
   display: none;
 }
 
-.open-sidebar-button, .close-sidebar-button{
+.open-sidebar-button,
+.close-sidebar-button {
   padding: 20px;
   display: block;
   cursor: pointer;
@@ -118,8 +119,8 @@ nav {
   height: 100%;
   width: 100%;
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   z-index: 9;
 }
 
@@ -145,7 +146,6 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
-  
 
   h4 {
     text-align: center;
@@ -155,7 +155,6 @@ nav {
     display: flex;
     justify-content: center;
   }
- 
 }
 
 .border-right {
@@ -177,28 +176,27 @@ nav {
   p {
     margin: 0;
     padding: 0 20px;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   img {
     width: 400px;
     height: 300px;
-
   }
 }
 
 /* ----- About Section ----- */
-#about-river{
+#about-river {
   background-color: var(--secondary-bg-color);
   color: var(--main-bg-color);
   height: 450px;
   padding: 40px 40px;
-  position:relative;
+  position: relative;
 
   h2 {
     color: var(--accent-secondary);
   }
   p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 }
 /* ---- About Section (Wave SVGs) ---- */
@@ -217,16 +215,13 @@ nav {
     height: 64px;
   }
   .shape-fill {
-    fill: #FFFCF0;
+    fill: #fffcf0;
   }
 }
 
 #overlap {
-  height: 400px;
+  height: 320px;
 
-  h2 {
-    padding-bottom: 20px;
-  }
 }
 
 /* ----- Footer ----- */
@@ -234,7 +229,7 @@ footer {
   background-color: var(--secondary-bg-color);
   height: 150px;
   position: relative;
-  
+
   ul {
     padding: 20px 10px;
     margin: 0;
@@ -258,8 +253,6 @@ footer {
     text-align: center;
     margin-top: 35px;
   }
-
-  
 }
 
 .custom-shape-divider-bottom-1712598211 {
@@ -280,23 +273,29 @@ footer {
 }
 
 .custom-shape-divider-bottom-1712598211 .shape-fill {
-  fill: #84B4BF;
+  fill: #84b4bf;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   main {
     width: 768px;
   }
 
-  h2{
+  h2 {
     font-size: 1.6rem;
   }
 
-  /* ----- NavBar ----- */
-  nav.primary .open-sidebar-button, .close-sidebar-button {
-    display:none;
+  #header {
+    height: 70vh;
+    background-image: url("../img/br-header-t.jpg");
   }
-  #sidebar-active{
+
+  /* ----- NavBar ----- */
+  nav.primary .open-sidebar-button,
+  .close-sidebar-button {
+    display: none;
+  }
+  #sidebar-active {
     display: none;
   }
 
@@ -308,7 +307,7 @@ footer {
   }
   .links-container {
     width: 80%;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -318,7 +317,7 @@ footer {
   }
 
   nav a {
-    width:fit-content;
+    width: fit-content;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -331,7 +330,7 @@ footer {
   #header h1 {
     font-size: 2rem;
   }
-  
+
   .card {
     height: 320px;
     display: grid;
@@ -342,7 +341,8 @@ footer {
       grid-column: 2;
       grid-row: 1 / span 2;
     }
-    h3, p {
+    h3,
+    p {
       text-align: left;
     }
     h3 {
@@ -354,13 +354,10 @@ footer {
       grid-column: 1;
       grid-row: 2;
     }
-    
   }
 
   #about-river {
-  
-
-    h2{
+    h2 {
       font-size: 1.6rem;
     }
     p {
@@ -368,5 +365,98 @@ footer {
     }
   }
 
+  #overlap {
+    height: 500px;
+  }
+}
 
+@media screen and (min-width: 992px) {
+  main {
+    width: 100%;
+  }
+  h2{font-size: 2rem;}
+  p{font-size: 1.2rem;}
+  
+  #header {
+    height: 100vh;
+    background-image: url("../img/br-header-d.jpg");
+    
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  #intro {
+    width: 80vw;
+    margin: auto;
+  }
+
+  #icon-links {
+    flex-direction: row;
+    justify-content: space-around;
+
+    .icon {
+      width:fit-content;
+      border: none;
+    }
+    h4 {
+      width: fit-content;
+      margin:auto;
+    }
+  }
+
+  #cards {
+    height: 750px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+  .card {
+    border: 2px solid var(--accent-main);
+    border-radius: 8px;
+    height: 650px;
+    grid-template-columns: 400px;
+    grid-template-rows: 300px 40px 300px;
+    grid-template-areas:
+    "image"
+    "heading"
+    "text";
+
+    img {
+      grid-area: image;
+    }
+   
+    h3 {
+      padding-top: 10px;
+      grid-area: heading;
+      text-align: center;
+    }
+    p {
+      text-align:center;
+      grid-area: text;
+      padding: 20px
+    }
+  }
+
+  #about-river {
+    height: 380px;
+
+    h2, p {
+      width: 80%;
+      margin: auto;
+    }
+    h2 {
+      padding: 30px 0 20px 0;
+    }
+  }
+
+  #overlap {
+    height: 800px;
+
+    img {
+      width: 80vw;
+      margin-left: 100px;
+    }
+  }
 }
