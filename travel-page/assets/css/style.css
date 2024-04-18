@@ -213,7 +213,7 @@ nav {
   }
   p {
     margin: 0;
-    padding: 0 20px;
+
     font-size: 0.9rem;
   }
   img {
@@ -479,7 +479,6 @@ footer {
     border-radius: 0;
   }
   #cards3 {
-    
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -508,14 +507,13 @@ footer {
     }
 
     h3 {
-      padding-top: 10px;
       grid-area: heading;
       text-align: center;
     }
     p {
       text-align: center;
       grid-area: text;
-      padding: 20px;
+      
     }
   }
 
