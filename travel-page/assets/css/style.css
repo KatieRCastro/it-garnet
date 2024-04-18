@@ -142,7 +142,15 @@ nav {
   padding: 20px 20px;
   margin-top: 0;
 }
+#canoeintro {
+  text-align: center;
+  padding: 20px 20px;
+  
+}
 
+#canoeintro li{
+  list-style-type: none;
+}
 /* ------ Icon Section ------- */
 #icon-links {
   margin: auto;
@@ -441,6 +449,10 @@ footer {
   }
 
   #zipintro {
+    width: 80vw;
+    margin: auto;
+  }
+  #canoeintro {
     width: 80vw;
     margin: auto;
   }
