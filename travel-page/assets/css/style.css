@@ -28,6 +28,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+.responsive-image {
+  max-width: 100%;
+  min-width: 400px;
+  min-height: 300px;
+  max-height: 690px;
+  margin-bottom: 20px;
+}
 
 main {
   width: 450px;
@@ -127,6 +134,11 @@ nav {
 #intro {
   text-align: center;
   padding: 20px 20px;
+}
+#trailsintro {
+  text-align: center;
+  padding: 20px 20px;
+  margin-top: 20px;
 }
 
 /* ------ Icon Section ------- */
@@ -373,6 +385,10 @@ footer {
       grid-column: 1;
       grid-row: 2;
     }
+    .responsive-image {
+      min-width: 400px;
+      min-height: 300px;
+    }
   }
 
   #about-river {
@@ -413,6 +429,10 @@ footer {
     width: 80vw;
     margin: auto;
   }
+  #trailsintro {
+    width: 80vw;
+    margin: auto;
+  }
 
   #icon-links {
     flex-direction: row;
@@ -444,7 +464,6 @@ footer {
     justify-content: center;
   }
   #cards2 .card {
-    /* Remove border-related properties */
     border: none;
     border-radius: 0;
   }
