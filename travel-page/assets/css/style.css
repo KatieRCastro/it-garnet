@@ -200,8 +200,12 @@ nav {
 #cards2 {
   margin-top: 40px;
 }
-.card {
-  text-align: center;
+
+#cards3 {
+  margin-top: 40px;
+  .card {
+    text-align: center;
+  }
 
   h3 {
     color: var(--accent-main);
@@ -216,18 +220,6 @@ nav {
     width: 400px;
     height: 300px;
   }
-}
-.two-column-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  
-}
-
-.two-column-cards .card {
-  flex-basis: calc(50% - 20px);
-  margin-bottom: 20px;
-  
 }
 
 /* ----- About Section ----- */
@@ -374,7 +366,6 @@ footer {
 
   #header h1 {
     font-size: 2rem;
-    
   }
 
   .card {
@@ -487,6 +478,14 @@ footer {
     border: none;
     border-radius: 0;
   }
+  #cards3 {
+    height: 750px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+
   .card {
     border: 2px solid var(--accent-main);
     border-radius: 8px;
