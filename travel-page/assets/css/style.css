@@ -42,8 +42,6 @@ main {
   position: relative;
 }
 
-
-
 #header {
   height: 50vh;
   position: relative;
@@ -142,6 +140,7 @@ nav {
 #zipintro {
   text-align: center;
   padding: 20px 20px;
+  margin-top: 0;
 }
 
 /* ------ Icon Section ------- */
@@ -217,6 +216,18 @@ nav {
     width: 400px;
     height: 300px;
   }
+}
+.two-column-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+
+.two-column-cards .card {
+  flex-basis: calc(50% - 20px);
+  margin-bottom: 20px;
+  
 }
 
 /* ----- About Section ----- */
@@ -340,7 +351,7 @@ footer {
     align-items: center;
   }
   .links-container {
-     width: 60%; 
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -363,6 +374,7 @@ footer {
 
   #header h1 {
     font-size: 2rem;
+    
   }
 
   .card {
@@ -437,7 +449,7 @@ footer {
     margin: auto;
   }
 
-   #zipintro {
+  #zipintro {
     width: 80vw;
     margin: auto;
   }
@@ -465,7 +477,7 @@ footer {
   }
 
   #cards2 {
-    height: 750px;
+    height: 570px;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -478,7 +490,7 @@ footer {
   .card {
     border: 2px solid var(--accent-main);
     border-radius: 8px;
-    height: 650px;
+    height: 570px;
     grid-template-columns: 400px;
     grid-template-rows: 300px 40px 300px;
     grid-template-areas:
