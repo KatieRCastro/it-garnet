@@ -139,6 +139,11 @@ nav {
   margin-top: 20px;
 }
 
+#zipintro {
+  text-align: center;
+  padding: 20px 20px;
+}
+
 /* ------ Icon Section ------- */
 #icon-links {
   margin: auto;
@@ -428,6 +433,11 @@ footer {
     margin: auto;
   }
   #trailsintro {
+    width: 80vw;
+    margin: auto;
+  }
+
+   #zipintro {
     width: 80vw;
     margin: auto;
   }
