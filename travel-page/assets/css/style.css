@@ -183,6 +183,26 @@ nav {
     height: 300px;
   }
 }
+#cards2 {
+  margin-top: 40px;
+}
+.card {
+  text-align: center;
+
+  h3 {
+    color: var(--accent-main);
+    margin: 10px 0;
+  }
+  p {
+    margin: 0;
+    padding: 0 20px;
+    font-size: 0.9rem;
+  }
+  img {
+    width: 400px;
+    height: 300px;
+  }
+}
 
 /* ----- About Section ----- */
 #about-river {
@@ -221,7 +241,6 @@ nav {
 
 #overlap {
   height: 320px;
-
 }
 
 /* ----- Footer ----- */
@@ -374,13 +393,17 @@ footer {
   main {
     width: 100%;
   }
-  h2{font-size: 2rem;}
-  p{font-size: 1.2rem;}
-  
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+
   #header {
     height: 100vh;
     background-image: url("../img/br-header-d.jpg");
-    
+
     h1 {
       font-size: 3rem;
     }
@@ -396,12 +419,12 @@ footer {
     justify-content: space-around;
 
     .icon {
-      width:fit-content;
+      width: fit-content;
       border: none;
     }
     h4 {
       width: fit-content;
-      margin:auto;
+      margin: auto;
     }
   }
 
@@ -412,6 +435,19 @@ footer {
     gap: 20px;
     justify-content: center;
   }
+
+  #cards2 {
+    height: 750px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+  #cards2 .card {
+    /* Remove border-related properties */
+    border: none;
+    border-radius: 0;
+  }
   .card {
     border: 2px solid var(--accent-main);
     border-radius: 8px;
@@ -419,30 +455,31 @@ footer {
     grid-template-columns: 400px;
     grid-template-rows: 300px 40px 300px;
     grid-template-areas:
-    "image"
-    "heading"
-    "text";
+      "image"
+      "heading"
+      "text";
 
     img {
       grid-area: image;
     }
-   
+
     h3 {
       padding-top: 10px;
       grid-area: heading;
       text-align: center;
     }
     p {
-      text-align:center;
+      text-align: center;
       grid-area: text;
-      padding: 20px
+      padding: 20px;
     }
   }
 
   #about-river {
     height: 380px;
 
-    h2, p {
+    h2,
+    p {
       width: 80%;
       margin: auto;
     }
