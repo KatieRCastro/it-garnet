@@ -217,7 +217,7 @@ nav {
     font-size: 0.9rem;
   }
   img {
-    width: 400px;
+    width: 500px;
     height: 300px;
   }
 }
@@ -479,11 +479,17 @@ footer {
     border-radius: 0;
   }
   #cards3 {
-    height: 750px;
+    
     display: flex;
     flex-direction: row;
     gap: 20px;
     justify-content: center;
+  }
+
+  #cards3 .card {
+    border: none;
+    border-radius: 0;
+    text-align: center;
   }
 
   .card {
