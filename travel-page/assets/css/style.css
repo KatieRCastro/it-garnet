@@ -203,15 +203,22 @@ nav {
     width: 400px;
     height: 300px;
   }
+
+  a {
+   color: var(--accent-main);
+  }
 }
 #cards2 {
   margin-top: 40px;
 }
 
 #cards3 {
-  margin-top: 40px;
+ 
+ 
+
   .card {
     text-align: center;
+  
   }
 
   h3 {
@@ -219,13 +226,19 @@ nav {
     margin: 10px 0;
   }
   p {
-    margin: 0;
-
     font-size: 0.9rem;
+    
   }
+
   img {
     width: 500px;
     height: 300px;
+  }
+  #cards5 {
+    margin-top: 0%;
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -486,7 +499,32 @@ footer {
     justify-content: center;
   }
 
+  #cards2 {
+    height: 570px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  #cards2 .card {
+    height: 450px;
+  }
+
+  #cards4 {
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  #cards4 .card {
+    height: 450px;
+  }
+
   #cards3 {
+    height: 570px;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -495,6 +533,19 @@ footer {
 
   #cards3 .card {
     text-align: center;
+    height: 500px;
+  }
+  #cards5 {
+    height: 470px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+  #cards5 .card {
+    border: none;
+    border-radius: 0;
+    height: 0;
   }
 
   .card {
