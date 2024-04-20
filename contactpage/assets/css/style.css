@@ -1,0 +1,606 @@
+:root {
+  --main-bg-color: #fffcf0;
+  --primary-type-color: #26261a;
+  --accent-main: #54878c;
+  --accent-secondary: #84b4bf;
+  --accent-hover: #d99441;
+  --secondary-bg-color: #3f402d;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Commissioner", sans-serif;
+  background-color: var(--main-bg-color);
+  color: var(--primary-type-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.responsive-image {
+  max-width: 100%;
+  min-width: 400px;
+  min-height: 300px;
+  max-height: 690px;
+  margin-bottom: 20px;
+}
+
+main {
+  width: 450px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#header {
+  height: 50vh;
+  position: relative;
+  background-image: url("../img/br-header-m.jpg");
+  background-size: cover;
+
+  h1 {
+    padding-left: 20px;
+    position: absolute;
+    top: 40%;
+    color: var(--main-bg-color);
+    font-weight: 800;
+  }
+}
+
+/* ------- NavBar ------- */
+nav {
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.288);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--main-bg-color);
+
+    height: auto;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: flex-start;
+  }
+  a:hover {
+    color: var(--accent-hover);
+  }
+
+  .logo {
+    width: fit-content;
+    margin-right: auto;
+  }
+
+  svg {
+    fill: #fff;
+  }
+}
+
+.links-container {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 300px;
+
+  background-color: var(--primary-type-color);
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+}
+
+#sidebar-active {
+  display: none;
+}
+
+.open-sidebar-button,
+.close-sidebar-button {
+  padding: 20px;
+  display: block;
+  cursor: pointer;
+}
+#sidebar-active:checked ~ .links-container {
+  display: flex;
+}
+#sidebar-active:checked ~ #overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+#intro {
+  text-align: center;
+  padding: 20px 20px;
+}
+#trailsintro {
+  text-align: center;
+  padding: 20px 20px;
+  margin-top: 20px;
+}
+
+#zipintro {
+  text-align: center;
+  padding: 20px 20px;
+  margin-top: 0;
+}
+#canoeintro {
+  text-align: center;
+  padding: 20px 20px;
+}
+
+#canoeintro li {
+  list-style-type: none;
+}
+/* ------ Icon Section ------- */
+#icon-links {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 15px;
+}
+
+.icon {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+
+  h4 {
+    text-align: center;
+    margin: 10px 10px 0 10px;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.border-right {
+  border-right: 2px solid #26261a63;
+}
+
+/* ----- Cards Section ----- */
+#cards {
+  margin-top: 40px;
+}
+.card {
+  margin-bottom: 25px;
+  text-align: center;
+
+  h3 {
+    color: var(--accent-main);
+    margin: 10px 0;
+  }
+  p {
+    margin: 0;
+    padding: 0 20px;
+    font-size: 0.9rem;
+  }
+  img {
+    width: 400px;
+    height: 300px;
+  }
+
+  a {
+   color: var(--accent-main);
+  }
+}
+#cards2 {
+  margin-top: 40px;
+}
+
+#cards3 {
+ 
+ 
+
+  .card {
+    text-align: center;
+  
+  }
+
+  h3 {
+    color: var(--accent-main);
+    margin: 10px 0;
+  }
+  p {
+    font-size: 0.9rem;
+    
+  }
+
+  img {
+    width: 500px;
+    height: 300px;
+  }
+  #cards5 {
+    margin-top: 0%;
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ----- About Section ----- */
+#about-river {
+  background-color: var(--secondary-bg-color);
+  color: var(--main-bg-color);
+  height: 450px;
+  padding: 40px 40px;
+  position: relative;
+
+  h2 {
+    color: var(--accent-secondary);
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}
+/* ---- About Section (Wave SVGs) ---- */
+.custom-shape-divider-top-1712460844 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+
+  svg {
+    position: relative;
+    display: block;
+    width: calc(105% + 1.3px);
+    height: 64px;
+  }
+  .shape-fill {
+    fill: #fffcf0;
+  }
+}
+
+#overlap {
+  height: 320px;
+}
+
+/* ----- Footer ----- */
+footer {
+  background-color: var(--secondary-bg-color);
+  height: 150px;
+  position: relative;
+
+  ul {
+    padding: 20px 10px;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+  li {
+    list-style-type: none;
+  }
+  a {
+    color: var(--main-bg-color);
+  }
+  a:hover {
+    color: var(--accent-hover);
+    cursor: pointer;
+  }
+  .copyright {
+    width: 100%;
+    color: var(--main-bg-color);
+    text-align: center;
+    margin-top: 35px;
+  }
+}
+
+.custom-shape-divider-bottom-1712598211 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1712598211 svg {
+  position: relative;
+  display: block;
+  width: calc(155% + 1.3px);
+  height: 79px;
+}
+
+.custom-shape-divider-bottom-1712598211 .shape-fill {
+  fill: #84b4bf;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    width: 768px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  #header {
+    height: 70vh;
+    background-image: url("../img/br-header-t.jpg");
+  }
+
+  /* ----- NavBar ----- */
+  nav.primary .open-sidebar-button,
+  .close-sidebar-button {
+    display: none;
+  }
+  #sidebar-active {
+    display: none;
+  }
+
+  nav {
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .links-container {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff00;
+    box-shadow: none;
+    position: inherit;
+  }
+
+  nav a {
+    width: fit-content;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+  }
+  nav .logo {
+    margin-right: auto;
+  }
+
+  #header h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    height: 320px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+
+    img {
+      grid-column: 2;
+      grid-row: 1 / span 2;
+    }
+    h3,
+    p {
+      text-align: left;
+    }
+    h3 {
+      padding-left: 20px;
+      grid-column: 1;
+      grid-row: 1;
+    }
+    p {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    .responsive-image {
+      min-width: 400px;
+      min-height: 300px;
+    }
+  }
+
+  #about-river {
+    h2 {
+      font-size: 1.6rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  #overlap {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    width: 100%;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+
+  #header {
+    height: 100vh;
+    background-image: url("../img/br-header-d.jpg");
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  #intro {
+    width: 80vw;
+    margin: auto;
+  }
+  #trailsintro {
+    width: 80vw;
+    margin: auto;
+  }
+
+  #zipintro {
+    width: 80vw;
+    margin: auto;
+    
+  }
+  #zipintro2 {
+    padding-bottom: 100px;
+  }
+  #canoeintro {
+    width: 80vw;
+    margin: auto;
+  }
+
+  #icon-links {
+    flex-direction: row;
+    justify-content: space-around;
+
+    .icon {
+      width: fit-content;
+      border: none;
+    }
+    h4 {
+      width: fit-content;
+      margin: auto;
+    }
+  }
+
+  #cards {
+    height: 750px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  #cards2 {
+    height: 570px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  #cards2 {
+    height: 570px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  #cards2 .card {
+    height: 450px;
+  }
+
+  #cards4 {
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  #cards4 .card {
+    height: 450px;
+  }
+
+  #cards3 {
+    height: 570px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  #cards3 .card {
+    text-align: center;
+    height: 500px;
+  }
+  #cards5 {
+    height: 470px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+  #cards5 .card {
+    border: none;
+    border-radius: 0;
+    height: 0;
+  }
+
+  .card {
+    border: 2px solid var(--accent-main);
+    border-radius: 8px;
+    height: 570px;
+    grid-template-columns: 400px;
+    grid-template-rows: 300px 40px 300px;
+    grid-template-areas:
+      "image"
+      "heading"
+      "text";
+
+    img {
+      grid-area: image;
+    }
+
+    h3 {
+      grid-area: heading;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      grid-area: text;
+    }
+  }
+#wufoo-z1j3laf6151etfu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+  #about-river {
+    height: 380px;
+
+    h2,
+    p {
+      width: 80%;
+      margin: auto;
+    }
+    h2 {
+      padding: 30px 0 20px 0;
+    }
+  }
+
+  #overlap {
+    height: 800px;
+
+    img {
+      width: 80vw;
+      margin-left: 100px;
+    }
+  }
+}
